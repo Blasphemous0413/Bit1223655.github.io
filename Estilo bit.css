@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    font-family: "Sedgwick Ave", cursive;
+}
+.sedgwick-ave-regular {
+    font-family: "Sedgwick Ave", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+body{
+    background-color: cadetblue;
+}
+header{
+    width: 100%;
+    height: 100px;
+    font-size: 100px;
+    background-color: aliceblue;
+    float: left;
+    text-align: center;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(176, 230, 233);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+    position: sticky;
+}
+nav a{
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    background-color: rgb(176, 211, 138);
+}
+h1{
+    padding: 15px;
+    color: black;
+}
+.ola{
+    width: 100%;
+    height: auto;
+}
+fieldset{
+    width: 90%;
+    height: auto;
+    border-color: black;
+    background-color: blanchedalmond;
+    margin-top: 2%;
+    margin-left: 4%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.txt{
+    width: 45%;
+    background-color: aquamarine;
+    float: left;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+.txt p{
+    padding: 15px;
+}
+footer{
+    margin-top: 2%;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: darkcyan;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo bit.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+    <title>Bitácora 1</title>
+</head>
+<body>
+    <header>
+        <p>Bitácora</p>
+    </header>
+    <nav>
+        <a href="#a">JS/DOM</a>
+        <a href="#b">Ref. con JS/Style</a>
+        <a href="#c">Classlist/Eventos</a>
+        <a href="#d">If Else/Viewport</a>
+        <a href="#e">@media</a>
+    </nav>
+    
+    <div class="ola">
+
+        <fieldset id="a">
+            <!--Javascript-->
+            <div class="txt">
+                <h1>Javascript (Conceptos básicos)</h1>
+                <p>
+                    <Strong>JavaScript</Strong> es un lenguaje de programación interpretado, orientado a objetos y basado en prototipos. Se utiliza principalmente para añadir interactividad a las páginas web y se ejecuta en el navegador del cliente. Fue desarrollado originalmente por <strong>Brendan Eich</strong> en 1995 mientras trabajaba para Netscape Communications.
+                </p>
+                <p>
+                   <Strong>Variables</strong>: En JavaScript, las variables son contenedores que almacenan datos que pueden cambiar durante la ejecución del programa. Se declaran usando las palabras clave var, let o const
+                </p>
+                <p>
+                    <Strong>Funciones</Strong>: Las funciones son bloques de código reutilizables que realizan una tarea específica. Se pueden definir usando la palabra clave function o como funciones de flecha con =>
+                </p>
+                <p>
+                    <Strong>Operadores aritméticos:</Strong>Son símbolos que realizan operaciones matemáticas básicas. Los operadores aritméticos en JavaScript incluyen:
+                </p>
+                <ul>
+                    <li>Suma (+)</li>
+                    <li>Resta (-)</li>
+                    <li>Multiplicación (*)</li>
+                    <li>División (/)</li>
+                    <li>Módulo (%), que devuelve el resto de una división</li>
+                </ul>
+                <p>Los <strong>tipos de datos</strong> de JS son</p>
+                <ul>
+                    <li><strong>String</strong>:Representa una secuencia de caracteres. Se define entre comillas simples o dobles.</li>
+                    <li><strong>Number</strong>: Representa números, ya sean enteros o decimales.</li>
+                    <li><strong>Booleano</strong>: Representa un valor lógico: true o false</li>
+                </ul>
+            </div>
+            <!--Javascript-->
+
+            <!--DOM-->
+            <div class="txt">
+                <h1>DOM</h1>
+                El <strong>Document Object Model (DOM)</strong> es una interfaz de programación que permite a los lenguajes como JavaScript interactuar con los documentos web. Fue desarrollado y estandarizado por la W3C (World Wide Web Consortium) y el WHATWG (Web Hypertext Application Technology Working Group). El DOM representa la estructura de un documento HTML o XML como un conjunto de nodos y objetos, facilitando la manipulación del contenido, estructura y estilo de la página web.
+                <p>Cuando un navegador carga una página web, convierte el archivo HTML en una estructura en árbol donde cada parte del HTML (elementos, atributos, texto) se convierte en un nodo del árbol. Esto permite a los programadores interactuar y manipular estos nodos mediante JavaScript para crear páginas dinámicas e interactivas. Contiene estas características:</p>
+                <ul>
+                    <li><strong>Estructura en árbol</strong>: El DOM es un modelo en árbol en el que cada elemento HTML se representa como un nodo. El nodo raíz es el objeto document, del cual se ramifican todos los demás nodos, representando elementos, atributos y texto del documento.</li>
+                    <li><strong>Manipulación dinámica</strong>: Con el DOM, puedes cambiar la estructura, estilo y contenido de una página sin tener que recargarla. Puedes agregar, modificar o eliminar nodos, cambiar atributos y actualizar el contenido de texto.</li>
+                    <li><strong>Eventos</strong>: El DOM permite asociar eventos a los elementos del documento. Esto es fundamental para crear interacciones en la página, como responder a clics, presionar teclas, o enviar formularios.</li>
+                    <li><strong>Acceso y búsqueda de nodos</strong>:  El DOM proporciona varias formas de acceder a elementos específicos del árbol</li>
+                    <li><strong>Compatibilidad con estándares</strong>: El DOM es un estándar W3C, lo que garantiza que los desarrolladores puedan escribir código que funcione de manera consistente en diferentes navegadores.</li>
+                </ul>
+            </div>
+            <!--DOM-->
+        </fieldset>
+    
+
+    
+        <fieldset id="b">
+            <!--Referenciar con JS-->
+            <div class="txt">
+                <h1>Referenciar con JS</h1>
+                <p>Referenciar un elemento en el DOM mediante JavaScript significa seleccionar un elemento HTML específico para poder interactuar con él, ya sea para leer o modificar su contenido, atributos, o estilos.</p>
+                <p>Las principales formas de referenciar elementos en JavaScript son:</p>
+                <ul>
+                    <li><strong>getElementById()</strong>: Selecciona un elemento por su atributo id.</li>
+                    <li><strong>getElementsByClassName()</strong>: Selecciona todos los elementos que tienen una clase específica. Devuelve una colección de elementos.</li>
+                    <li><strong>getElementsByTagName()</strong>: Selecciona todos los elementos con una etiqueta HTML específica (como div, p, etc.).</li>
+                    <li><strong>querySelector()</strong>: Selecciona el primer elemento que coincida con un selector CSS.</li>
+                    <li><strong>querySelectorAll()</strong>: Selecciona todos los elementos que coinciden con un selector CSS. Devuelve una NodeList.</li>
+                </ul>
+            </div>
+            <!--Referenciar con JS-->
+
+            <!--propiedad style-->
+            <div class="txt">
+                <h1>Propiedad Style</h1>
+                <p>La <strong>propiedad style</strong> en JavaScript permite acceder y modificar directamente los estilos CSS en línea de un elemento HTML. Esta propiedad es útil cuando quieres cambiar dinámicamente la apariencia de un elemento desde el propio JavaScript, sin necesidad de modificar una hoja de estilos externa.</p>
+                <p>La propiedad style solo modifica los estilos en línea de un elemento. No afecta los estilos definidos en hojas de estilo externas o dentro de <i>style</i> en el HTML. Si deseas leer los estilos actuales de un elemento, no siempre será suficiente usar element.style, ya que esto solo devuelve los estilos en línea.</p>
+                <p>Ventajas:</p>
+                <ul>
+                    <li>Permite cambios dinámicos de estilos sin tener que tocar el archivo CSS.</li>
+                    <li>Útil para cambiar estilos en respuesta a eventos del usuario (como click, hover, etc.).</li>
+                </ul>
+                <p>Desventajas:</p>
+                <ul>
+                    <li>Altera solo los estilos en línea, lo que puede hacer que el código sea más difícil de mantener si se usa en exceso.</li>
+                    <li>Para gestionar estilos complejos y consistentes, es preferible modificar las clases CSS a través de JavaScript en lugar de cambiar directamente las propiedades de estilo.</li>
+                </ul>
+            </div>
+            <!--propiedad style-->
+        </fieldset>
+    
+
+   
+        <fieldset id="c">
+            <!--classlist-->
+            <div class="txt">
+                <h1>Classlist</h1>
+                <p>La propiedad classList es una forma conveniente de trabajar con las clases CSS de un elemento HTML en JavaScript. Permite agregar, eliminar, alternar (toggle) o comprobar la presencia de una clase sin necesidad de modificar el atributo class directamente. Esto simplifica la manipulación de clases de manera dinámica y eficiente.</p>
+                <p><Strong>Métodos de classlist:</Strong></p>
+                <ul>
+                    <li>add(): Agrega una o más clases al elemento.</li>
+                    <li>remove(): Elimina una o más clases del elemento.</li>
+                    <li>toggle(): Alterna una clase en el elemento. Si la clase está presente, la elimina; si no, la agrega.</li>
+                    <li>contains(): Verifica si el elemento tiene una clase específica.</li>
+                    <li>replace(): Reemplaza una clase por otra.</li>
+                </ul>
+            </div>
+            <!--classlist-->
+
+            <!--Eventos-->
+            <div class="txt">
+                <h1>Eventos</h1>
+                <p>
+                    En JavaScript, los eventos son acciones o sucesos que ocurren en el navegador, como clics, movimientos de ratón, teclas presionadas o el envío de un formulario. Los eventos permiten que el código reaccione a las interacciones del usuario con la página web. Para manejar eventos, se utilizan funciones llamadas event listeners o manejadores de eventos, que se ejecutan cuando el evento ocurre. Por ejemplo, se puede usar addEventListener() para escuchar un evento específico (como un clic) en un elemento HTML y ejecutar una función cuando ocurra dicho evento.
+                </p>
+            </div>
+            <!--Eventos-->
+        </fieldset>
+
+        <fieldset id="d">
+            <!--If Else-->
+            <div class="txt">
+                <h1>If Else</h1>
+                <p>La sentencia if-else en JavaScript permite tomar decisiones en función de condiciones lógicas. Dependiendo de si una expresión o condición es verdadera (true) o falsa (false), se ejecutará un bloque de código u otro.</p>
+                <p><strong>Operadores Lógicos en If Else</strong></p>
+                <ul>
+                    <li>==: Igual a</li>
+                    <li>===: Igual a (estricta comparación, verifica tipo de dato)</li>
+                    <li>!=: Diferente a</li>
+                    <li>!==: Diferente a (estricta comparación)</li>
+                    <li>>: Mayor que</li>
+                    <li><: Menor que</li>
+                    <li>>=: Mayor o igual que</li>
+                    <li><=: Menor o igual que</li>
+                    <li>&&: Y lógico (ambas condiciones deben ser verdaderas)</li>
+                    <li>||: O lógico (al menos una condición debe ser verdadera)</li>
+                    <li>!: Negación lógica (invierte el valor lógico)</li>
+                </ul>
+            </div>
+            <!--If Else-->
+
+            <!--Viewport-->
+            <div class="txt">
+                <h1>Viewport</h1>
+                <p>El viewport se refiere a la parte visible de una página web en el dispositivo del usuario, es decir, el área de la ventana del navegador que está disponible para mostrar contenido. Es un concepto crucial en diseño web responsivo, ya que el tamaño del viewport varía entre dispositivos (como teléfonos móviles, tabletas o pantallas de escritorio). En JavaScript, se puede obtener el tamaño del viewport con propiedades como window.innerWidth y window.innerHeight, que permiten ajustar el diseño o comportamiento de la página en función de las dimensiones de la ventana del navegador.</p>
+            </div>
+            <!--Viewport-->
+        </fieldset>
+
+        <fieldset id="e">
+            <!--@Medias-->
+            <div class="txt">
+                <h1>@media</h1>
+                <p>Los @media en CSS son reglas condicionales que permiten aplicar estilos específicos en función de ciertas características del dispositivo o ventana del navegador, como el ancho del viewport, la orientación de la pantalla o la resolución. Estas reglas son esenciales para el diseño web responsivo, ya que permiten que una página se adapte y se vea bien en distintos tamaños de pantalla, como móviles, tabletas o monitores de escritorio.
+
+                    La sintaxis básica de una media query comienza con @media, seguida de una condición (como el ancho de la ventana) y el bloque de estilos que se aplicará si esa condición se cumple. Por ejemplo, puedes usar @media para cambiar el diseño de una página cuando el ancho del viewport es menor que 768 píxeles, ideal para dispositivos móviles. Esto permite definir diferentes layouts, tamaños de texto, o cualquier otra propiedad CSS en función del dispositivo o entorno.
+                    
+                    En resumen, los @media son una herramienta poderosa para crear sitios web flexibles y adaptables, garantizando una buena experiencia de usuario sin importar el dispositivo utilizado.</p>
+            </div>
+            <!--@Medias-->
+        </fieldset>
+    
+    </div>
+    
+    <footer>
+        <br>
+        <h3>Docente: Adrián Alonso Durán Coronado</h3><br>
+        <h3>Alumno: Víctor Manuel Hernández Muñoz</h3><br>
+        <h3>Matrícula: 223655</h3><br>
+        <h3>Materia: Diseño Web HTML5 y CSS3 Adaptativo</h3><br>
+    </footer>
+</body>
+</html>
